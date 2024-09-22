@@ -4,8 +4,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ GITHUB_ACTOR }}"
-      - run: echo "${{ GITHUB_API_URL }}"
-      - run: echo "${{ GITHUB_ENV }}"
-      - run: echo "${{ GITHUB_REF_NAME }}"
-      - run: echo "${{ GITHUB_RESISTORY }}"
+      - run: echo "$GITHUB_ACTOR}"
+      - run: echo "${GITHUB_API_URL}"
+      - run: echo "${GITHUB_ENV}"
+      - run: echo "${GITHUB_REF_NAME}"
+      - run: echo "${GITHUB_RESISTORY}"

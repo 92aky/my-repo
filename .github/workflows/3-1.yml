@@ -4,9 +4,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run:
-        echo "${{ github.actor_path }}"
-        echo "${{ github.api_url }}"
-        echo "${{ github.env }}"
-        echo "${{ github.ref_name }}"
-        echo "${{ github.repository }}"
+      - run: echo "${{ github.actor_path }}"
+      - run: echo "${{ github.api_url }}"
+      - run: echo "${{ github.env }}"
+      - run: echo "${{ github.ref_name }}"
+      - run: echo "${{ github.repository }}"

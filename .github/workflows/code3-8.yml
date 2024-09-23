@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: printenv | grep '_FUNC'
         env:
-	  CONTAINS_FUNC: ${{ contains('Hello', 'ell') }}
-	  STARTS_WITH_FUNC: ${{ startWith('Hello', 'He') }}
-	  ENDS_WITH_FUNC: ${{ endsWith('Hello', 'lo') }}
+          CONTAINS_FUNC: ${{ contains('Hello', 'ell') }}
+          STARTS_WITH_FUNC: ${{ startWith('Hello', 'He') }}
+          ENDS_WITH_FUNC: ${{ endsWith('Hello', 'lo') }}
 	  

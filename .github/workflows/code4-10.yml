@@ -1,0 +1,11 @@
+name: Auto cancel
+on: push
+concurrency: ${{ github.workflow }}
+  cancel-in-progress: true
+env:
+  WKFL: ${{ github.workflow }}
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 120

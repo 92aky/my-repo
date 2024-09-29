@@ -6,3 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sleep 120
+      env:
+        WKFL: ${{ github.workflow }}
+      - run: echo "${WKFL}"

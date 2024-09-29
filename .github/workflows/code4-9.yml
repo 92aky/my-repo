@@ -1,11 +1,11 @@
 name: Concurrency
 on: push
 concurrency: ${{ github.workflow }}
+env:
+  WKFL: ${{ github.workflow }}
 jobs:
   sleep:
     runs-on: ubuntu-latest
     steps:
       - run: sleep 120
-      env:
-        WKFL: ${{ github.workflow }}
       - run: echo "${WKFL}"
